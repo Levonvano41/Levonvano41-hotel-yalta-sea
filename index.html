@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отель "Морская Лагуна" | Сочи, Краснодарский край</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/booking.css">
+  <link rel="stylesheet" href="styles/rooms.css">
+  <link rel="stylesheet" href="styles/amenities.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/offers.css">
+  <link rel="stylesheet" href="styles/reviews.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <div class="logo__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-anchor"><circle cx="12" cy="5" r="3"/><line x1="12" x2="12" y1="22" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+        </div>
+        <div class="logo__text">
+          <h1>Отель "Морская Лагуна"</h1>
+          <p>Сочи, Краснодарский край</p>
+        </div>
+      </div>
+      
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#rooms">Номера</a></li>
+          <li><a href="#amenities">Услуги</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#offers">Спецпредложения</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__contact">
+        <button class="btn-booking">Забронировать</button>
+      </div>
+      
+      <div class="header__mobile-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </div>
+    <ul class="mobile-menu__list">
+      <li><a href="#rooms">Номера</a></li>
+      <li><a href="#amenities">Услуги</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#offers">Спецпредложения</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <div class="mobile-menu__contact">
+      <a href="tel:+78622345678">+7 (862) 234-56-78</a>
+      <button class="btn-booking">Забронировать</button>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="container hero__container">
+      <h2 class="hero__title">Роскошный отдых на побережье Черного моря</h2>
+      <p class="hero__subtitle">Незабываемый отдых в самом сердце Сочи с панорамным видом на море</p>
+      <div class="hero__buttons">
+        <button class="btn-primary">Забронировать номер</button>
+        <button class="btn-secondary">Посмотреть номера</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="booking">
+    <div class="container booking__container">
+      <form class="booking__form">
+        <div class="form__group">
+          <label for="check-in">Дата заезда</label>
+          <input type="date" id="check-in">
+        </div>
+        <div class="form__group">
+          <label for="check-out">Дата выезда</label>
+          <input type="date" id="check-out">
+        </div>
+        <div class="form__group">
+          <label for="adults">Взрослые</label>
+          <select id="adults">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="children">Дети</label>
+          <select id="children">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary">Проверить наличие</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="rooms" id="rooms">
+    <div class="container rooms__container">
+      <h2 class="section-title">Наши номера</h2>
+      <p class="section-subtitle">Комфортные номера с изысканным дизайном и всем необходимым для вашего отдыха</p>
+      
+      <div class="rooms__grid">
+        <div class="room-card">
+          <div class="room-card__image">
+            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg" alt="Стандартный номер">
+            <div class="image__overlay">
+              <button class="btn-primary">Забронировать</button>
+            </div>
+          </div>
+          <div class="room-card__content">
+            <h3 class="room-card__title">Стандартный номер</h3>
+            <p class="room-card__desc">Уютный номер площадью 25 м² с видом на город. В номере: двуспальная кровать, кондиционер, телевизор, мини-бар, сейф.</p>
+            <div class="room-card__details">
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>2 гостя</span>
+              </div>
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                <span>1 кровать</span>
+              </div>
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                <span>25 м²</span>
+              </div>
+            </div>
+            <div class="room-card__price">
+              <span class="price">от 4 500 ₽</span>
+              <span class="period">за ночь</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="room-card">
+          <div class="room-card__image">
+            <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg" alt="Люкс с видом на море">
+            <div class="image__overlay">
+              <button class="btn-primary">Забронировать</button>
+            </div>
+          </div>
+          <div class="room-card__content">
+            <h3 class="room-card__title">Люкс с видом на море</h3>
+            <p class="room-card__desc">Просторный номер площадью 45 м² с панорамным видом на море. В номере: двуспальная кровать king-size, гостиная зона, кондиционер, телевизор, мини-бар, сейф.</p>
+            <div class="room-card__details">
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>2-3 гостя</span>
+              </div>
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                <span>1 кровать King-size</span>
+              </div>
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                <span>45 м²</span>
+              </div>
+            </div>
+            <div class="room-card__price">
+              <span class="price">от 8 900 ₽</span>
+              <span class="period">за ночь</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="room-card">
+          <div class="room-card__image">
+            <img src="https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg" alt="Семейный люкс">
+            <div class="image__overlay">
+              <button class="btn-primary">Забронировать</button>
+            </div>
+          </div>
+          <div class="room-card__content">
+            <h3 class="room-card__title">Семейный люкс</h3>
+            <p class="room-card__desc">Идеальный выбор для семей площадью 60 м². В номере: спальня с двуспальной кроватью, детская спальня с двумя односпальными кроватями, кондиционер, телевизор, мини-бар, сейф.</p>
+            <div class="room-card__details">
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span>2-4 гостя</span>
+              </div>
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bed"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+                <span>3 кровати</span>
+              </div>
+              <div class="detail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+                <span>60 м²</span>
+              </div>
+            </div>
+            <div class="room-card__price">
+              <span class="price">от 12 500 ₽</span>
+              <span class="period">за ночь</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="rooms__more">
+        <a href="#" class="btn-secondary">Посмотреть все номера</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="amenities" id="amenities">
+    <div class="container amenities__container">
+      <h2 class="section-title">Услуги отеля</h2>
+      <p class="section-subtitle">Широкий спектр услуг для комфортного отдыха</p>
+      
+      <div class="amenities__grid">
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Ресторан "Морская волна"</h3>
+          <p class="amenity-card__desc">Изысканная кухня с блюдами из морепродуктов и традиционными русскими блюдами. Панорамный вид на море.</p>
+          <div class="amenity-card__details">
+            <span class="detail">Время работы: 7:00 - 23:00</span>
+            <a href="#" class="amenity-card__link">Посмотреть меню</a>
+          </div>
+        </div>
+        
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Частный пляж</h3>
+          <p class="amenity-card__desc">Собственный оборудованный пляж с шезлонгами, зонтиками и баром. Безопасный вход в море.</p>
+          <div class="amenity-card__details">
+            <span class="detail">Расстояние: 50 метров от отеля</span>
+            <span class="detail">Сезон: Май - Октябрь</span>
+          </div>
+        </div>
+        
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flower"><path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9m7.5 0a4.5 4.5 0 1 1-4.5 4.5m4.5-4.5H15m-3 4.5V15"/><circle cx="12" cy="12" r="3"/><path d="m8 16 1.5-1.5"/><path d="M14.5 9.5 16 8"/><path d="m8 8 1.5 1.5"/><path d="M14.5 14.5 16 16"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Спа-центр "Лагуна"</h3>
+          <p class="amenity-card__desc">Широкий выбор процедур для лица и тела, массажи, сауна, хаммам, крытый бассейн с подогревом.</p>
+          <div class="amenity-card__details">
+            <span class="detail">Время работы: 9:00 - 21:00</span>
+            <a href="#" class="amenity-card__link">Посмотреть прайс-лист</a>
+          </div>
+        </div>
+        
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-car"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+          </div>
+          <h3 class="amenity-card__title">Трансфер</h3>
+          <p class="amenity-card__desc">Комфортабельный трансфер из/в аэропорт Сочи и железнодорожный вокзал. Экскурсионное обслуживание.</p>
+          <div class="amenity-card__details">
+            <span class="detail">Предварительный заказ</span>
+            <a href="#" class="amenity-card__link">Заказать трансфер</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container gallery__container">
+      <h2 class="section-title">Фотогалерея</h2>
+      <p class="section-subtitle">Познакомьтесь с нашим отелем визуально</p>
+      
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--1">
+          <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg" alt="Вид отеля">
+        </div>
+        <div class="gallery__item gallery__item--2">
+          <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="Лобби отеля">
+        </div>
+        <div class="gallery__item gallery__item--3">
+          <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg" alt="Номер люкс">
+        </div>
+        <div class="gallery__item gallery__item--4">
+          <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg" alt="Ресторан">
+        </div>
+        <div class="gallery__item gallery__item--5">
+          <img src="https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg" alt="Бассейн">
+        </div>
+        <div class="gallery__item gallery__item--6">
+          <img src="https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg" alt="Вид на море">
+        </div>
+      </div>
+      
+      <div class="gallery__more">
+        <a href="#" class="btn-secondary">Больше фотографий</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers" id="offers">
+    <div class="container offers__container">
+      <h2 class="section-title">Специальные предложения</h2>
+      <p class="section-subtitle">Воспользуйтесь нашими выгодными предложениями для незабываемого отдыха</p>
+      
+      <div class="offers__grid">
+        <div class="offer-card">
+          <div class="offer-card__image">
+            <img src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg" alt="Романтический уикенд">
+            <div class="offer-card__badge">-15%</div>
+          </div>
+          <div class="offer-card__content">
+            <h3 class="offer-card__title">Романтический уикенд</h3>
+            <p class="offer-card__desc">Проведите незабываемые выходные вдвоем: люкс с видом на море, бутылка шампанского, романтический ужин при свечах, спа-процедуры для двоих.</p>
+            <div class="offer-card__details">
+              <div class="offer-card__price">
+                <span class="price">от 14 900 ₽</span>
+                <span class="old-price">от 17 500 ₽</span>
+              </div>
+              <button class="btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="offer-card">
+          <div class="offer-card__image">
+            <img src="https://images.pexels.com/photos/3771836/pexels-photo-3771836.jpeg" alt="Раннее бронирование лето 2025">
+            <div class="offer-card__badge">-20%</div>
+          </div>
+          <div class="offer-card__content">
+            <h3 class="offer-card__title">Раннее бронирование лето 2025</h3>
+            <p class="offer-card__desc">Забронируйте отдых на лето 2025 года уже сейчас и получите скидку 20%. Предложение действительно при бронировании от 7 ночей.</p>
+            <div class="offer-card__details">
+              <div class="offer-card__price">
+                <span class="price">от 3 600 ₽</span>
+                <span class="old-price">от 4 500 ₽</span>
+              </div>
+              <button class="btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="offer-card">
+          <div class="offer-card__image">
+            <img src="https://images.pexels.com/photos/3775092/pexels-photo-3775092.jpeg" alt="Семейный отдых">
+            <div class="offer-card__badge">Дети бесплатно</div>
+          </div>
+          <div class="offer-card__content">
+            <h3 class="offer-card__title">Семейный отдых</h3>
+            <p class="offer-card__desc">Проживание детей до 12 лет бесплатно в номере с родителями. Включено: детский клуб, анимация, детское меню, бассейн с детской зоной.</p>
+            <div class="offer-card__details">
+              <div class="offer-card__price">
+                <span class="price">от 8 500 ₽</span>
+                <span class="period">за номер</span>
+              </div>
+              <button class="btn-primary">Забронировать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="container reviews__container">
+      <h2 class="section-title">Отзывы гостей</h2>
+      <p class="section-subtitle">Что говорят о нас наши гости</p>
+      
+      <div class="reviews__slider">
+        <div class="review-card">
+          <div class="review-card__rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-card__text">"Прекрасный отель с великолепным видом на море! Отличный сервис, вкусная еда в ресторане, чистый пляж. Обязательно вернемся снова!"</p>
+          <div class="review-card__author">
+            <div class="author__image">
+              <img src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg" alt="Анна М.">
+            </div>
+            <div class="author__info">
+              <h4 class="author__name">Анна М.</h4>
+              <p class="author__date">Август 2024</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-card__rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-card__text">"Мы отдыхали семьей с двумя детьми. Отель превзошел все наши ожидания! Удобные номера, внимательный персонал, разнообразная анимация для детей. Рекомендую!"</p>
+          <div class="review-card__author">
+            <div class="author__image">
+              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Дмитрий К.">
+            </div>
+            <div class="author__info">
+              <h4 class="author__name">Дмитрий К.</h4>
+              <p class="author__date">Июль 2024</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="review-card">
+          <div class="review-card__rating">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star half">★</span>
+          </div>
+          <p class="review-card__text">"Провели здесь романтический уикенд с мужем. Восхитительный вид из номера, вкусный завтрак, отличное обслуживание. Спа-центр просто великолепен! Обязательно приедем еще."</p>
+          <div class="review-card__author">
+            <div class="author__image">
+              <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Елена В.">
+            </div>
+            <div class="author__info">
+              <h4 class="author__name">Елена В.</h4>
+              <p class="author__date">Июнь 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reviews__controls">
+        <button class="control control-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="control control-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <div class="logo__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-anchor"><circle cx="12" cy="5" r="3"/><line x1="12" x2="12" y1="22" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+            </div>
+            <div class="logo__text">
+              <h3>Отель "Морская Лагуна"</h3>
+              <p>Сочи, Краснодарский край</p>
+            </div>
+          </div>
+          <p class="footer__desc">Роскошный отель на побережье Черного моря, сочетающий комфорт, уют и высокий уровень сервиса для идеального отдыха.</p>
+        </div>
+        
+        <div class="footer__col">
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__contacts">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Курортный проспект, 47, Сочи, Краснодарский край, 354002</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+78622345678">+7 (862) 234-56-78</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:info@hotel-laguna.ru">info@hotel-laguna.ru</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer__col">
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__nav">
+            <li><a href="#rooms">Номера</a></li>
+            <li><a href="#amenities">Услуги</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#offers">Спецпредложения</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__col">
+          <h3 class="footer__title">Подписка на новости</h3>
+          <p class="footer__subtitle">Подпишитесь на нашу рассылку, чтобы получать информацию о специальных предложениях и акциях</p>
+          <form class="footer__form">
+            <input type="email" placeholder="Ваш email">
+            <button type="submit" class="btn-primary">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 Отель "Морская Лагуна". Все права защищены.</p>
+        <div class="footer__social">
+          <a href="#" class="social__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
